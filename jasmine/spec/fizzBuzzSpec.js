@@ -11,6 +11,8 @@ describe("FizzBuzz", function() {
   it("returns fizzbuzz when given a number divisible by 3 and 5", function(){
     expect(fizzbuzz(15)).toEqual("FizzBuzz")
   });
-
+  it("returns the number when given a number neither divisible by 3 nor by 5", function(){
+    expect(fizzbuzz(11)).toEqual(11)
+  });
 
 });
